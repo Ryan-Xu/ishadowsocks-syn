@@ -1,33 +1,33 @@
 {
-"configs" : [
-  {
-"server" : "us1.iss.tf",
-"server_port" : 8989,
-"password" : "52271403",
-"method" : "aes-256-cfb",
-"remarks" : "us1.iss.tf"}
-,
-  {
-"server" : "hk2.iss.tf",
-"server_port" : 8989,
-"password" : "01823436",
-"method" : "aes-256-cfb",
-"remarks" : "hk2.iss.tf"}
-,
-  {
-"server" : "jp3.iss.tf",
-"server_port" : 8989,
-"password" : "98688518",
-"method" : "aes-256-cfb",
-"remarks" : "jp3.iss.tf"}
-
-],
-"strategy" : null,
-"index" : 1,
-"global" : true,
-"enabled" : false,
-"shareOverLan" : false,
-"isDefault" : false,
-"localPort" : 1080,
-"pacUrl" : null,
-"useOnlinePac" : false}
+    "configs":[
+        {
+            "method":"aes-256-cfb",
+            "password":"67659226",
+            "remarks":"us1.iss.tf",
+            "server":"us1.iss.tf",
+            "server_port":"443"
+        },
+        {
+            "method":"aes-256-cfb",
+            "password":"47278282",
+            "remarks":"hk2.iss.tf",
+            "server":"hk2.iss.tf",
+            "server_port":"8989"
+        },
+        {
+            "method":"aes-256-cfb",
+            "password":"33646463",
+            "remarks":"jp3.iss.tf",
+            "server":"jp3.iss.tf",
+            "server_port":"443"
+        }
+    ],
+    "enabled":true,
+    "global":false,
+    "index":1,
+    "isDefault":false,
+    "localPort":1080,
+    "pacUrl":null,
+    "shareOverLan":false,
+    "useOnlinePac":false
+}

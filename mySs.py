@@ -79,7 +79,8 @@ class FlushConfig:
 
 	def flushConfig(self, cfginfo):
 		with open(self.cfgfile, 'w') as f:
-			json.dump(cfginfo, f)
+			json.dump(cfginfo, f, sort_keys=True,
+                    indent=4, separators=(',', ':'))
 
 
 # 启动shadowsocks客户端
@@ -105,7 +106,7 @@ if __name__ == '__main__':
 	'DNT':'1', 'Referer':
 	'http://www.ishadowsocks.com', 'Accept-Encoding': 'gzip, deflate,sdch', 'Accept-Language': 'zh-CN,zh;q=0.8,ja;q=0.6'
 	}
-	
+
 	gc = GatherConfig(ishadowsocks_url, headers)
 	sjson = gc.gatherJson()
 
